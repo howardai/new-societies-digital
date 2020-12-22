@@ -1,8 +1,8 @@
 # New Societies Digital
-by [re:current theatre](https://recurrenttheatre.com/projects/new-societies/)
-Directed by Brian Postalian
-Created by the company
-Google Apps Script programming by [Howard Dai](https://www.howarddai.com/)
+by [re:current theatre](https://recurrenttheatre.com/projects/new-societies/).  
+Directed by Brian Postalian.  
+Created by the company.  
+Google Apps Script programming by [Howard Dai](https://www.howarddai.com/).  
 
 ### Performance History (Ditigal Version) ###
 Upintheair's eVolver Festival. Vancouver, BC. (June 25, 2020)
