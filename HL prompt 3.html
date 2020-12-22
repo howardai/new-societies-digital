@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <base target="_top">
+  <style>
+  form {    
+    width: 100%;
+    margin-left : 0%
+  }
+  </style>
+    
+  </head>
+  <body>
+  <form style="padding: 50x 100px;">
+  
+     <b>Division: </b>
+     <select name="division" id="division">
+     <?!=selectedcode?>
+     </select>
+     <br><br>
+   
+
+     
+     <b>Reserve</b><br>
+     <input type="radio" id="harvest" name="harvest" value="1">
+     <label for="default">None</label>
+     <input type="radio" id="harvest" name="harvest" value="2">
+     <label for="low">Low</label>
+     <input type="radio" id="harvest" name="harvest" value="3">
+     <label for="middle">Middle</label>
+     <input type="radio" id="harvest" name="harvest" value="4">
+     <label for="high">High</label>
+     <br><br>
+
+    <script>
+        function harvest_return(){
+        var harvest = document.getElementsByName('harvest');
+        for(var i = 0; i < harvest.length; i++){
+        if(harvest[i].checked){
+        return harvest[i].value;
+        break
+        }
+        }}   
+    </script>
+
+     
+     <input type="button" value="Submit"
+        onclick="google.script.run.HLSubmit(
+        document.getElementById('division').value,
+        harvest_return())"/>
+     <input type="button" value="Cancel" onclick="google.script.host.close()" />
+  </form> 
+  </body>
+</html>
